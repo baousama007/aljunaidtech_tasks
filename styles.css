@@ -1,0 +1,165 @@
+:root {
+  --cyber-blue: #0066cc;
+  --cyber-accent: #00c2ff;
+  --cyber-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: url('./image/bg.jpeg') no-repeat center fixed;
+  background-size: cover;
+  color: var(--cyber-text);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#Home-Button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(to right, var(--cyber-blue), var(--cyber-accent));
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--cyber-text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.cyber-title {
+  font-family: 'Inter', sans-serif;
+  color: var(--cyber-text);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Form container positioned to the right */
+.form-container {
+  background: linear-gradient(145deg, rgba(0, 13, 26, 0.9), rgba(0, 26, 51, 0.8));
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 
+    0 0 30px rgba(0, 194, 255, 0.1),
+    0 0 60px rgba(0, 194, 255, 0.05);
+  border: 1px solid rgba(0, 194, 255, 0.1);
+  position: absolute;
+  right: 10%; /* Moves the form to the right side */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.cyber-form h2 {
+  font-family: 'Inter', sans-serif;
+  color: var(--cyber-text);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  background: rgba(0, 13, 26, 0.6);
+  border: 1px solid rgba(0, 194, 255, 0.2);
+  color: var(--cyber-text);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-control:focus {
+  background: rgba(0, 13, 26, 0.8);
+  border-color: var(--cyber-accent);
+  box-shadow: 0 0 15px rgba(0, 194, 255, 0.2);
+  color: var(--cyber-text);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, var(--cyber-blue), var(--cyber-accent));
+  border: none;
+  color: var(--cyber-text);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 194, 255, 0.3);
+  background: linear-gradient(to right, var(--cyber-accent), var(--cyber-blue));
+}
+
+a {
+  color: var(--cyber-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--cyber-text);
+  text-shadow: 0 0 5px var(--cyber-accent);
+}
+
+.social-icons {
+  margin-top: 2.5rem;
+}
+
+.social-icon {
+  font-size: 1.4rem;
+  margin: 0 12px;
+  color: var(--cyber-accent);
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.social-icon:hover {
+  color: var(--cyber-text);
+  text-shadow: 0 0 10px var(--cyber-accent);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  color: var(--cyber-text);
+  opacity: 0.7;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .form-container {
+    right: 2%;
+    padding: 1.5rem;
+  }
+  
+  .cyber-title {
+    font-size: 2rem;
+  }
+}
